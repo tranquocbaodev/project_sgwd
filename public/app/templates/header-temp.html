@@ -1,0 +1,34 @@
+<div class="head-left hidden-xs hidden-sm" data-ng-controller="Core">
+	<a class="main-logo" href="javascript:;" data-ng-click="goTrangChu()">
+		<img src="i/des/logo-top.png" alt="logo-blue" class="logo">
+		<img src="i/ipad/logo-top.png" alt="logo-blue" class="logo02"> 
+	</a>
+	<nav>
+		<!-- start menu-head -->
+		<ul class="menu-head">
+			<li data-ng-class="{active:locationName==='Trang Chủ'}">
+				<a class="text-head hvr-underline-from-center" href="javascript:;" data-ng-click="goTrangChu()" >TRANG CHỦ</a>
+			</li>
+			<li data-ng-class="{active:(locationName==='Sản Phẩm' || locationName==='Chi Tiết Sản Phẩm')}">
+				<a class="text-head hvr-underline-from-center" href="javascript:;" data-ng-click="goSanPham()" >Sản phẨm</a>
+			</li>
+			<li data-ng-class="{active:locationName==='Công Trình Thực Tế'}">
+				<a class="text-head hvr-underline-from-center" href="javascript:;" data-ng-click="goCtThucTe()" >Công Trình thực tế</a>
+			</li>
+			<li data-ng-class="{active:locationName==='Liên Hệ'}">
+				<a class="text-head hvr-underline-from-center" href="javascript:;" data-ng-click="goLienHe()" >Liên hệ </a>
+			</li>
+		</ul>
+		<!-- end menu-head -->
+		<span class="call-me">HOTLINE <i class="number">{{addressData.phones}}</i></span>
+		<div class="clear"></div>
+	</nav>
+</div>
+<!-- end .head left -->
+
+<div class="mobi-version visible-xs visible-sm" data-ng-class="{'back-ver':locationName==='Chi Tiết Sản Phẩm'}">
+	<a href="javascript:;" class="icons icon-menu" data-ng-click="isShowNavMobile=!isShowNavMobile;setIsShowNavMobile(isShowNavMobile)"></a>
+	<a href="javascript:;" class="icons icon-back" data-ng-click="goSanPham()"></a>
+	<span class="blue-title">{{locationName}}</span>
+</div>
+<!-- end /mobi-version -->

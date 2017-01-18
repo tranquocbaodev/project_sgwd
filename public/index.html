@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app" id="ng-app" data-ng-controller="Core as vmc">
+		<head lang="en">
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Saigon Windows</title>
+			
+			<!-- CSS Style -->
+			<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+			<link rel="stylesheet" href="bower_components/jquery-ui/themes/base/jquery-ui.css">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+			<link rel="stylesheet" href="bower_components/bxslider-4/dist/jquery.bxslider.min.css" ></link>
+
+			<!-- Slider css -->
+			<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick.css"/>
+			<link rel="stylesheet" type="text/css" href="bower_components/slick-carousel/slick/slick-theme.css"/>
+
+			<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+			<link rel="stylesheet" type="text/css" href="css/breakpoints.css"/>
+			<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD8Hapzg41flr_JsCB68J_RRT5VuJ5VDs"></script>
+			<link href="favicon.png" rel="icon" type="image/x-icon" />
+		</head>
+
+		<body>
+			<div class="container-fluid" data-ui-view="default" data-ng-class="{'cut-off':getIsShowNavMobile()}"></div>
+
+			<script src="bower_components/jquery/dist/jquery.min.js"></script>
+			<script src="bower_components/jquery-ui/jquery-ui.js"></script>
+			<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+			<script src="app/blocks/block-directive.js"></script>
+			<script src="bower_components/angular/angular.js"></script>
+			<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+			<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+			<script src="bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+			<script type="text/javascript" src="bower_components/slick-carousel/slick/slick.min.js"></script>
+
+			<!-- /.page -->
+			<script src="app/app.module.js"></script>
+			<!-- core -->
+			<script src="app/core/core.module.js"></script>
+			<script src="app/core/config.js"></script>
+			<script src="app/core/core.controller.js"></script>
+			<script src="app/core/dataservice.js"></script>
+			
+
+			<!-- trangchu -->
+			<script src="app/trangchu/trangchu.module.js"></script>
+			<script src="app/trangchu/trangchu.route.js"></script>
+			<script src="app/trangchu/trangchu.controller.js"></script>
+
+			<!-- sanpham -->
+			<script src="app/sanpham/sanpham.module.js"></script>
+			<script src="app/sanpham/sanpham.route.js"></script>
+			<script src="app/sanpham/sanpham.controller.js"></script>
+
+			<!-- chi tiet san pham -->
+			<script src="app/chitietsanpham/chitietsanpham.module.js"></script>
+			<script src="app/chitietsanpham/chitietsanpham.route.js"></script>
+			<script src="app/chitietsanpham/chitietsanpham.controller.js"></script>
+
+			<!-- lien he -->
+			<script src="app/lienhe/lienhe.module.js"></script>
+			<script src="app/lienhe/lienhe.route.js"></script>
+			<script src="app/lienhe/lienhe.controller.js"></script>
+
+			<!-- cong trinh thuc te -->
+			<script src="app/ctthucte/ctthucte.module.js"></script>
+			<script src="app/ctthucte/ctthucte.route.js"></script>
+			<script src="app/ctthucte/ctthucte.controller.js"></script>
+
+			<div class="dark-overlay" data-ng-show="getIsShowNavMobile() || isShowSlideCTTT" data-ng-click="hiddenNavMobile()"></div>
+			<!-- end .dark-overlay -->
+		</body>
+</html>

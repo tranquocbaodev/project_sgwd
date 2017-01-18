@@ -1,0 +1,48 @@
+<span class="blue-title for-product-page">{{category}}</span>
+<div class="special-products">
+  <div class="demo-some-house">
+    <div class="same-style-window" data-ng-repeat="item in pagedItems[currentPage-1]" data-ng-class="{only:$last}" data-ng-click="showInfoItem(item)">
+      <img class="dream-house visible-xs visible-sm" src="i/des/house.jpg" alt="IMG" data-ng-src="{{item.urlImage}}" />
+      <div class="hovereffect hidden-xs hidden-sm">
+        <img class="dream-house" src="i/des/house.jpg" alt="IMG" data-ng-src="{{item.urlImage}}" />
+        <div class="overlay">
+          <h2>{{item.address}}</h2>
+          <a class="info" href="javascript:;">Xem Ảnh</a>
+        </div>
+      </div>
+      <!-- <a class="cover-all" href="javascript:;"></a>
+			<div class="more-info">
+				<span class="white-title">{{item.category}}</span>
+				<span class="identity">Mã số :  <i class="blue-name">{{item.codeId}}</i></span>
+			</div> -->
+      <!-- end /more-info -->
+
+      <!-- <div class="hovereffect">
+	        <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+	        <div class="overlay">
+	           <h2>Hover effect 4</h2>
+	           <a class="info" href="#">link here</a>
+	        </div>
+	    </div> -->
+    </div>
+    <!-- end /same-style-window -->
+    <div class="group-link">
+      <a href="javascript:;" class="left-button link-icons" data-ng-click="prevPage()" data-ng-class="{active:currentPage>1}">
+        <span class="icons back"></span>
+      </a>
+      <input type="text" class="put-num-here" data-valid-number data-ng-model="currentPage" data-ng-change="setPage()" />
+      <span class="grey-text">of</span>
+      <a href="javascript:;" class="number-link">{{pagedItems.length}}</a>
+      <a href="javascript:;" class="right-button link-icons" data-ng-click="nextPage()" data-ng-class="{active:(currentPage < pagedItems.length)}">
+        <span class="icons next"></span>
+      </a>
+      <div class="clear"></div>
+    </div>
+    <!-- end /group-link -->
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- end /demo-some-house -->
+<!-- end group-box -->
+<div class="clear"></div>
+<!-- end main-content-intro -->

@@ -1,0 +1,51 @@
+[
+	{
+		"id":1,
+		"urlImage":"i/des/house.jpg",
+		"address":"17 Đào Trinh Nhất",
+		"category":"Nhà phố, biệt thự",
+		"codeId":"SGWN001"
+	},
+	{
+		"id":2,
+		"urlImage":"i/des/house1.jpg",
+		"address":"17 Đào Trinh Nhất",
+		"category":"Nhà phố, biệt thự",
+		"codeId":"SGWN002"
+	},
+	{
+		"id":3,
+		"urlImage":"i/des/house3.jpg",
+		"address":"17 Đào Trinh Nhất",
+		"category":"Nhà phố, biệt thự",
+		"codeId":"SGWN003"
+	},
+	{
+		"id":4,
+		"urlImage":"i/des/house6.jpg",
+		"address":"17 Đào Trinh Nhất",
+		"category":"Nhà phố, biệt thự",
+		"codeId":"SGWN004"
+	},
+	{
+		"id":5,
+		"urlImage":"i/des/house1.jpg",
+		"address":"17 Đào Trinh Nhất",
+		"category":"Trụ sở, văn phòng",
+		"codeId":"SGWN002"
+	},
+	{
+		"id":6,
+		"urlImage":"i/des/house3.jpg",
+		"address":"17 Đào Trinh Nhất",
+		"category":"Nhà hàng, cafe",
+		"codeId":"SGWN003"
+	},
+	{
+		"id":7,
+		"urlImage":"i/des/house6.jpg",
+		"address":"17 Đào Trinh Nhất",
+		"category":"Nhà hàng, cafe",
+		"codeId":"SGWN003"
+	}
+]

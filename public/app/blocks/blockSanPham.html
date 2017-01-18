@@ -1,0 +1,58 @@
+<span class="blue-title for-product-page">{{titleMaterial}}</span>
+<div class="collection-button">
+	<a href="javascript:;" class="box-tab" data-ng-click="filterCategoty('Cửa sổ')" data-ng-class="{active:category==='Cửa sổ'}">Cửa sổ</a>
+	<a href="javascript:;" class="box-tab" data-ng-click="filterCategoty('Cửa đi')" data-ng-class="{active:category==='Cửa đi'}">Cửa đi</a>
+	<a href="javascript:;" class="box-tab only" data-ng-click="filterCategoty('Cửa lùa')" data-ng-class="{active:category==='Cửa lùa'}">Cửa lùa</a>
+	<div class="clear"></div>
+</div>
+<!-- end /collection-button -->
+<div class="special-products">
+	<div class="demo-some-windows">
+		<div class="beautiful-window" data-ng-repeat="item in pagedItems[currentPage-1]" data-ng-class="{'new-item':item.status==='New', 'hot-item':item.status==='Hot'}" data-ng-click="clickDetailProduct(item)">
+			<div class="first-group">
+				<img src="i/des/img-01.jpg" alt="IMG" data-ng-src="{{item.imageDesk}}"/>
+				<figcaption class="hidden-xs hidden-sm">
+					<h2>{{item.title}}</h2>
+					<p>Mã Số: <i>{{item.codeId}}</i></p>
+					<p>Thương Hiệu: <i>{{item.brand}}</i></p>
+					<p>Chất Liệu: <i>{{item.materialType}}</i></p>
+					<a href="javascript:;"></a>
+				</figcaption>
+			</div>
+			<!-- end /first-group -->
+			<div class="second-group visible-xs visible-sm">
+				<h4>{{item.title}}</h4>
+				<div class="more-info">
+					<span class="grey-text">Mã Số: <i>{{item.codeId}}</i></span>
+					<span class="grey-text">Thương Hiệu: <i>{{item.brand}}</i></span>
+					<span class="grey-text only">Chất Liệu: <i>{{item.materialType}}</i></span>
+				</div>
+				<!-- end /more-info -->
+			</div>
+			<!-- end /second-group -->
+			<div class="third-group">
+				<span class="white-title">{{item.status}}</span>
+				<span class="ribbon-status icons"></span>
+			</div>
+			<!-- end /third-group -->
+		</div>
+		<!-- end /beautiful-window -->
+		<div class="group-link">
+			<a href="javascript:;" class="left-button link-icons" data-ng-click="prevPage()" data-ng-class="{active:currentPage>1}">
+				<span class="icons back"></span>
+			</a>
+			<input type="text" class="put-num-here" data-valid-number data-ng-model="currentPage" data-ng-change="setPage()"/>
+			<span class="grey-text">of</span>
+			<a href="javascript:;" class="number-link">{{pagedItems.length}}</a>
+			<a href="javascript:;" class="right-button link-icons" data-ng-click="nextPage()" data-ng-class="{active:(currentPage < pagedItems.length)}">
+				<span class="icons next"></span>
+			</a>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!-- end /demo-some-windows -->
+<!-- end group-box -->
+<div class="clear"></div>
+<!-- end main-content-intro -->

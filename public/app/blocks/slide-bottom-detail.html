@@ -1,0 +1,18 @@
+<section class="slider2 bottom-slider second">
+	<article class="slide child-slide new-hover-text" data-ng-repeat="item in list">
+		<a class="cover-all" href="javascript:;"></a>
+		<img class="demo-window" src="i/des/i-slide.jpg" alt="IMG" data-ng-src="{{item.imageDesk}}">
+		<figcaption class="hidden-xs hidden-sm">
+			<h2>{{item.title}}</h2>
+			<p>Mã Số: <i>{{item.codeId}}</i></p>
+			<p>Thương Hiệu: <i>{{item.brand}}</i></p>
+			<p>Chất Liệu: <i>{{item.materialType}}</i></p>
+			<a href="javascript:;" data-ng-click="clickDetailProduct(item)"></a>
+		</figcaption>
+		<div class="text-slide visible-xs visible-sm">
+			<h1 class="text-big">{{item.title}}</h1>
+			<span class="text-small">Mã số: <i>{{item.codeId}}</i></span>
+		</div>
+		<!-- end .text-slide -->
+	</article>
+</section>

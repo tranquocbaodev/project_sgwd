@@ -1,0 +1,80 @@
+<div class="row" data-ng-controller="trangchuCtrl as vm">
+	<div class="sg-windows" data-ng-class="{'move-right':getIsShowNavMobile()}">
+		<header data-header-temp></header>
+		<!-- end header -->
+		<div class="main-content">
+			<div  data-slider-temp="dataSlides"></div>
+			<!-- end .top-slider -->
+
+			<div class="intro-content for-dashboard">
+				<span class="title-intro">Các Sản Phẩm Chính</span>
+				<div class="group-intro">
+					<div class="main-intro" data-ng-repeat="item in dataSanPhamChinh" data-ng-class="{only:$last}">
+						<a class="i-intro" href="javascript:;" data-ng-click="setMaterialInfo(item.material);goSanPham()">
+							<img src="i/des/i-00.jpg" alt="IMG" class="hidden-xs" data-ng-src="{{item.imageDesk}}">
+							<img src="i/mobi/i-00.jpg" alt="IMG" class="mobi-intro visible-xs" data-ng-src="{{item.imageMobile}}">
+						</a>
+						<a class="text-intro" href="javascript:;">{{item.title}}</a>
+						<p class="text-information hidden-xs hidden-sm">{{item.desc}}</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- end group-intro -->
+			</div>
+			<!-- end .intro-content -->
+
+			<div class="main-content-intro">
+				<div class="special-products">
+					<span class="blue-title">Một số sản phẩm nổi bật</span>
+					<div class="demo-some-windows" >
+						<div class="beautiful-window" data-ng-repeat="item in dataSanPhamNoiBat" data-ng-class="{'new-item':item.status==='New', 'hot-item':item.status==='Hot'}" data-ng-click="clickDetailProduct(item)">
+							<div class="first-group" >
+								<img src="i/des/img-01.jpg" alt="IMG" data-ng-src="{{item.imageDesk}}" />
+								<figcaption class="hidden-xs hidden-sm">
+									<h2>{{item.title}}</h2>
+									<p>Mã Số: <i>{{item.codeId}}</i></p>
+									<p>Thương Hiệu: <i>{{item.brand}}</i></p>
+									<p>Chất Liệu: <i>{{item.materialType}}</i></p>
+									<a href="javascript:;" ></a>
+								</figcaption> 
+							</div>
+							<div class="second-group visible-xs visible-sm">
+                <h4>{{item.title}}</h4>
+                <div class="more-info">
+                  <span class="grey-text">Mã Số: <i>{{item.codeId}}</i></span>
+                  <span class="grey-text">Thương Hiệu: <i>{{item.brand}}</i></span>
+                  <span class="grey-text only">Chất Liệu: <i>{{item.materialType}}</i></span>
+                </div>
+                <!-- end /more-info -->
+              </div>
+							<!-- end /first-group -->
+							<div class="third-group">
+								<span class="white-title">{{item.status}}</span>
+								<span class="ribbon-status icons"></span>
+							</div>
+							<!-- end /third-group -->
+						</div>
+						<!-- end /beautiful-window -->
+						<div class="clear"></div>
+					</div>
+					<!-- end /demo-some-windows -->
+					<div class="clear"></div>
+				</div>
+				<!-- end /special-products -->
+				<div class="actual-product-img">
+					<span class="blue-title">Các Công trình thực tế</span>
+					<div data-slider-bottom="dataCtThucTe"></div>
+				</div>
+				<!-- end /actual-product-img -->
+				<div class="clear"></div>
+			</div>
+			<!-- end .main-content-intro -->
+		</div>
+		<!-- end main-content -->
+		<footer data-footer-temp></footer>
+		<!-- end footer -->
+	</div>
+	<!-- end .sg-windows -->
+	<div data-nav-mobile></div>
+</div>
+<!-- end .row -->

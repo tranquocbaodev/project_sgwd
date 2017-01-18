@@ -1,0 +1,17 @@
+[
+	{
+		"title":"Nhà phố, biệt thự",
+		"imageDesk":"i/des/i-00.jpg",
+		"imageMobile":"i/mobi/i-00.jpg"
+	},
+	{
+		"title":"Trụ sở, văn phòng",
+		"imageDesk":"i/des/i-01.jpg",
+		"imageMobile":"i/mobi/i-01.jpg"
+	},
+	{
+		"title":"Nhà hàng, cafe",
+		"imageDesk":"i/des/i-02.jpg",
+		"imageMobile":"i/mobi/i-02.jpg"
+	}
+]

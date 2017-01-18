@@ -1,0 +1,41 @@
+<div class="row" data-ng-controller="ctthucteCtrl as vm">
+	<div class="sg-windows" data-ng-class="{'move-right':getIsShowNavMobile()}">
+		<!-- start header -->
+		<header data-header-temp></header>
+		<!-- end header -->
+		<!-- start main-content -->
+		<div class="main-content product-page actual-work-page">
+			<!-- start top-slide -->
+			<div data-slider-temp="dataSlides"></div>
+			<!-- end top-slide -->
+			<div class="intro-content for-dashboard">
+				<span class="title-intro">Các Công trình của chúng tôi</span>
+				<div class="group-intro">
+					<div class="main-intro" data-ng-repeat="item in dataCtThucteChinh" data-ng-class="{only:$last}">
+						<a class="i-intro" href="javascript:;" data-ng-click="selectCategoryCt(item.title,$event)">
+							<img src="i/des/i-00.jpg" alt="IMG" class="hidden-xs" data-ng-src="{{item.imageDesk}}">
+							<img src="i/mobi/i-00.jpg" alt="IMG" class="mobi-intro visible-xs" data-ng-src="{{item.imageMobile}}">
+						</a>
+						<a class="text-intro" href="javascript:;">{{item.title}}</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!-- end group-intro -->
+			</div>
+			<!-- end .intro-content -->
+			<!-- start main-content-intro -->
+			<div class="main-content-intro " data-block-nha-pho="dataCtThucTe"></div>
+			<!-- end main-content-intro -->
+		</div>
+		<!-- end main-content -->
+		<!-- start footer -->
+		<footer data-footer-temp></footer>
+		<!-- end footer -->
+		<!-- end footer -->
+	</div>
+	<!-- end-sg-windows -->
+	<div data-nav-mobile></div>
+	<!-- end .menu-mobi -->
+	<div data-slider-detail-real="dataCtThucTe"></div>
+</div>
+<!-- end .row. -->

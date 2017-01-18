@@ -1,0 +1,77 @@
+<div class="row" data-ng-controller="chitietsanphamCtrl as vm">
+	<div class="sg-windows" data-ng-class="{'move-right':getIsShowNavMobile()}">
+		<!-- start header -->
+		<header data-header-temp></header> 
+		<div data-nav-mobile></div>
+		<!-- end header -->
+		<!-- start main-content -->
+		<div class="main-content product-detail-page">
+				<!-- start top-slide -->
+			<div  data-slider-temp="dataSlides"></div>
+				<!-- end top-slide -->
+				<!-- start div -->
+				<div class="content-detail">
+					<div class="first-group-content">
+						<a href="javascript:;" class="title-detail" data-ng-click="goSanPham()"><span class="icon-t-detail icons"></span> Sản Phẩm</a>
+						<div class="img-detail same-fl">
+							<img class="windows-here" src="i/des/img-sp.jpg" alt="IMG" data-ng-src="{{vm.detailProduct.imageDesk}}"/>
+						</div>
+						<!-- intro-sp -->
+						<div class="intro-sp same-fl">
+							<h1 class="title-intro-sp">{{vm.detailProduct.title}}</h1>
+							<div class="group-text-sp">
+								<span class="text-sp">Mã số: {{vm.detailProduct.codeId}}</span>
+								<span class="text-sp">Ngày đăng: {{vm.detailProduct.date}}</span>
+								<div class="clear"></div>
+							</div>
+							<div class="group-text-p">
+								<span class="same-tyle"><i class="bold-text">Thương hiệu:</i>{{vm.detailProduct.brand}}</span>
+								<span class="same-tyle"><i class="bold-text">Nhà sản xuất:</i> {{vm.detailProduct.manufacturer}}</span>
+								<span class="same-tyle"><i class="bold-text">Chất liệu:</i> {{vm.detailProduct.materialType}}</span>
+								<span class="same-tyle only"><i class="bold-text">Màu sắc: </i> {{vm.detailProduct.color}}</span>
+							</div>
+							<div class="call-me-now">
+								<p class="read-me">Để có báo giá chi tiết và chính xác về sản phẩm quý khách xin vui lòng liên hệ </p>
+								<span class="my-number">{{addressData.phones}}</span>
+							</div>
+						</div>
+						<!-- end intro-sp <-->
+						<div class="clear"></div>
+					</div>
+					<!-- end /first-group-content -->
+					<div class="second-group-content">
+						<div class="best-sgwd ">
+								<h1 class="blue-title">Tính năng, ưu điểm:</h1>
+								<ul class="group-list">
+										<li class="list" data-ng-repeat="item in vm.detailProduct.func" >{{item}}
+										</li>
+								</ul>
+						</div>
+						<div class="best-sgwd two clone">
+								<h1 class="blue-title">Quy định về bảo hành</h1>
+								<ul class="group-list">
+										<li class="list" data-ng-repeat="item in vm.detailProduct.warranty" >{{item}}</li>
+								</ul>
+						</div>
+						<!-- end best-sgwd two-->
+						<div class="clear"></div>
+					</div>
+					<!-- end /second-group-content -->
+					<div class="third-group-content">
+						<span class="title-slide">Các mẫu thông dụng:</span>
+					</div>
+						<div data-slider-bottom-detail="dataSanPhamNoiBat"></div> 
+					
+					<!-- end /third-group-content -->
+				</div>
+				<!-- end content-detail -->
+		</div>
+		<!-- end main-content -->
+		<!-- start footer -->
+		<footer data-footer-temp></footer>
+		<!-- end footer -->
+	</div>
+	<!-- end-sg-windows -->
+	<div data-nav-mobile></div>
+</div>
+<!-- end .row. -->

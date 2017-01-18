@@ -1,0 +1,12 @@
+<div class="slide-menu-mobi visible-xs visible-sm" data-ng-show="getIsShowNavMobile()">
+	<a class="top-logo" href="javascript:;" data-ng-click="goTrangChu()">
+		<img src="i/mobi/nav-logo.png" alt="logo head mobi">
+	</a>
+	<ul>
+		<li><a class="link-to-page" href="javascript:;" data-ng-click="goTrangChu()" data-ng-class="{active:locationName==='Trang Chủ'}">Trang Chủ</a></li>
+		<li><a class="link-to-page" href="javascript:;" data-ng-click="goSanPham()" data-ng-class="{active:(locationName==='Sản Phẩm' || locationName==='Chi Tiết Sản Phẩm')}">Sản phẨm</a></li>
+		<li><a class="link-to-page" href="javascript:;" data-ng-click="goCtThucTe()" data-ng-class="{active:locationName==='Công Trình Thực Tế'}" >Công Trình thực tế</a></li>
+		<li><a class="link-to-page" href="javascript:;" data-ng-click="goLienHe()" data-ng-class="{active:locationName==='Liên Hệ'}">Liên hệ</a></li>
+	</ul>
+</div>
+<!-- end /slide-menu-mobi -->

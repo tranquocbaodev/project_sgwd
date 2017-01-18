@@ -1,0 +1,29 @@
+<div class="slider-real" data-ng-show="isShowSlide">
+	<div class="child-slider">
+		<a class="icons icon-close" href="javascript:;" data-ng-click="clickCloseSlideInfo()"></a>
+		<div class="slide-repeat-box">
+			<div class="main-content-img" data-ng-repeat="item in arraySlide  track by $index">
+				<img class="demo-house" src="i/des/img-popup.jpg" alt="IMG" data-ng-src="{{item.urlImage}}"/>
+				<div class="more-info">
+					<div class="info-plus">
+						<ul>
+							<li>
+								<span class="white-text">Địa chỉ : {{item.address}}</span>
+							</li>
+						</ul>
+					</div>
+					<!-- end /info-plus -->
+					<div class="call-me">
+						<span class="title"><i class="yellow-text">Hotline</i> 0907120585</span>
+					</div>
+					<!-- end /call-me -->
+				</div>
+				<!-- end /more-info -->
+			</div>
+		</div>
+		
+		<!-- end /main-content-img -->
+	</div>
+	<!-- end /child-slider -->
+</div>
+<!-- end /slider-real -->

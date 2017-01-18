@@ -1,0 +1,23 @@
+[
+	{
+		"title":"Cửa nhựa",
+		"material":"Nhựa",
+		"imageDesk":"i/des/i-00.jpg",
+		"imageMobile":"i/mobi/i-00.jpg",
+		"desc":"Cung cấp các loại cửa ra vào chất lượng đáp ứng mọi nhu cầu và phong cách. Chọn từ thép, gỗ, nhôm, thủy tinh ..."
+	},
+	{
+		"title":"Cửa nhôm",
+		"material":"Hợp kim nhôm",
+		"imageDesk":"i/des/i-01.jpg",
+		"imageMobile":"i/mobi/i-01.jpg",
+		"desc":"Cung cấp các loại cửa ra vào chất lượng đáp ứng mọi nhu cầu và phong cách. Chọn từ thép, gỗ, nhôm, thủy tinh ..."
+	},
+	{
+		"title":"Kính cường lực",
+		"material":"Kính cường lực",
+		"imageDesk":"i/des/i-02.jpg",
+		"imageMobile":"i/mobi/i-02.jpg",
+		"desc":"Cung cấp các loại cửa ra vào chất lượng đáp ứng mọi nhu cầu và phong cách. Chọn từ thép, gỗ, nhôm, thủy tinh ..."
+	}
+]
