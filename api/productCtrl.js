@@ -2,7 +2,7 @@
 var express = require('express'),
     router = express.Router(),
     mongoose = require('mongoose'),
-    Product = mongoose.models.products,
+    Product = mongoose.models.Products,
     api = {};
 
 // ALL

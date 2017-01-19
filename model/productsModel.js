@@ -6,9 +6,7 @@ var Schema = mongoose.Schema;
 
 var productsSchema = new Schema({
 	_id: String,
-	title: {
-		type: String
-	},
+	title: String,
 	status: String,
 	favorite: Boolean,
 	imageDesk: String,
@@ -28,4 +26,4 @@ var productsSchema = new Schema({
 	materialType:String,
 	category:String
 });
-mongoose.model('products', productsSchema);
+mongoose.model('Products', productsSchema);
