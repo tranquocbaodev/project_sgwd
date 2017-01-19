@@ -21,7 +21,7 @@ and (max-width: 767px) {
 	/*Icons*/
 	.icons {
 		background-image: url(../i/mobi/icons.png);
-		background-size: 25px 250px;
+		background-size: 50px 500px;
 		background-position: 0 0;
 	}
 
@@ -46,7 +46,7 @@ and (max-width: 767px) {
 			width: 15px;
 			height: 23px;
 			background-image: url(../i/mobi/icons.png);
-			background-size: 25px 250px;
+			background-size: 50px 500px;
 			background-position: 0 -23px;
 			position: absolute;
 			top: 9px;
@@ -765,7 +765,7 @@ and (max-width: 767px) {
 					width: 15px;
 					height: 23px;
 					background-image: url(../i/mobi/icons.png);
-					background-size: 25px 250px;
+					background-size: 50px 500px;
 					background-position: 0 -23px;
 					position: absolute;
 					top: 0;
@@ -1446,7 +1446,7 @@ and (max-width: 991px) {
 	/*Icons*/
 	.icons {
 		background-image: url(../i/mobi/icons.png);
-		background-size: 25px 250px;
+		background-size: 50px 500px;
 		background-position: 0 0;
 	}
 
@@ -1471,7 +1471,7 @@ and (max-width: 991px) {
 			width: 15px;
 			height: 23px;
 			background-image: url(../i/mobi/icons.png);
-			background-size: 25px 250px;
+			background-size: 50px 500px;
 			background-position: 0 -23px;
 			position: absolute;
 			top: 9px;
@@ -2214,7 +2214,7 @@ and (max-width: 991px) {
 					width: 15px;
 					height: 23px;
 					background-image: url(../i/mobi/icons.png);
-					background-size: 25px 250px;
+					background-size: 50px 500px;
 					background-position: 0 -23px;
 					position: absolute;
 					top: 0;
@@ -2737,21 +2737,21 @@ and (max-width: 1279px) {
 	}
 	footer .foot-right .group-icons .fb {
 		display: block;
-		width: 14px;
-		height: 27px;
-		background-position: -171px -63px;
+		width: 39px;
+		height: 39px;
+		background-position: 0 -212px;
 	}
 	footer .foot-right .group-icons .google {
 		display: block;
-		width: 42px;
-		height: 27px;
-		background-position: -214px -63px;
+		width: 39px;
+		height: 39px;
+		background-position: -60px -212px;
 	}
 	footer .foot-right .group-icons .youtube {
 		display: block;
-		width: 29px;
-		height: 19px;
-		background-position: -276px -71px;
+		width: 42px;
+		height: 30px;
+		background-position: -120px -221px;
 	}
 
 
@@ -2879,6 +2879,41 @@ and (max-width: 1279px) {
 	.container-fluid .sg-windows {
 		font-family: 'Roboto', sans-serif;
 		background-color: #fff;
+	}
+	
+	/*Footer*/
+	footer .foot-left {
+		width: 500px;
+		padding-left: 30px;
+	}
+	footer .intro-company .about-name {
+		font-size: 22px;
+	}
+	footer .intro-company .about-address {
+		display: block;
+		height: 29px;
+		line-height: 28px;
+		margin-bottom: 35px;
+		padding: 0 0 0 42px;
+		font-size: 22px;
+		font-weight: 400;
+		color: #fff;
+		position: relative;
+	}
+	footer .foot-right .call-me .icon-phone {
+		top: 0;
+	}
+	footer .intro-company .about-email {
+		padding-top: 3px;
+	}
+	footer .foot-right {
+		margin-top: 60px;
+	}
+	footer .foot-right .call-me {
+		font-size: 26px;
+	}
+	footer .foot-right .group-icons .icon-sociall {
+		margin-right: 40px;
 	}
 	
 }

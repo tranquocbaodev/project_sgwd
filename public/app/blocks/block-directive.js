@@ -139,7 +139,8 @@ $(function() {
 		return {
 			restrict: 'A',
 			scope: {
-				list: "=sliderDetailReal"
+				list: "=sliderDetailReal",
+				addressData:"="
 			},
 			templateUrl: function(element, attrs) {
 				  return "app/blocks/slide-detail-real.html";
@@ -194,7 +195,9 @@ $(function() {
 
 				// reset slide
 				scope.resetSlide = function() {
-					$('.slide-repeat-box').slick('unslick');
+					if ($('.slide-repeat-box').length) {
+						$('.slide-repeat-box').slick('unslick');
+					}
 				}
 
 				// go to number slide

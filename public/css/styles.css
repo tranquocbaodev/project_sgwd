@@ -1193,7 +1193,7 @@ footer {
 	footer .foot-left {
 		float: left;
 		margin-top: 45px;
-		padding-left: 66px;
+		padding-left: 60px;
 		position: relative;
 	}
 		footer .foot-left .logo-foot {
@@ -1276,7 +1276,7 @@ footer {
 	footer .foot-right {
 		float: right;
 		width: 450px;
-		margin: 81px 96px 0 0;
+		margin: 81px 90px 0 0;
 		position: relative;
 	}
 		footer .foot-right .double-pp {
@@ -1303,8 +1303,7 @@ footer {
 		}
 			footer .foot-right .group-icons .icon-sociall {
 				display: inline-block;
-				width: 42px;
-				margin-right: 21px;
+				margin-right: 40px;
 				position: relative;
 			}
 			footer .foot-right .group-icons .icon-sociall.last {
@@ -1313,21 +1312,21 @@ footer {
 			}
 				footer .foot-right .group-icons .fb {
 					display: block;
-					width: 14px;
-					height: 26px;
-					background-position: 0 -36px;
+					width: 39px;
+					height: 39px;
+					background-position: 0 -292px;
 				}
 				footer .foot-right .group-icons .google {
 					display: block;
-					width: 41px;
-					height: 26px;
-					background-position: -34px -36px;
+					width: 39px;
+					height: 39px;
+					background-position: -58px -292px;
 				}
 				footer .foot-right .group-icons .youtube {
 					display: block;
-					width: 26px;
-					height: 19px;
-					background-position: -95px -39px;
+					width: 42px;
+					height: 30px;
+					background-position: -116px -301px;
 				}
 				footer .foot-right .group-icons .icon-sociall .icons {
 					margin: 0 auto;
@@ -1356,7 +1355,7 @@ footer {
 			min-width: 280px;
 			width: auto;
 			margin: 0 auto;
-			font-size: 38px;
+			font-size: 30px;
 			font-weight: 400;
 			color: #fff;
 			position: relative;
@@ -1369,7 +1368,7 @@ footer {
 				background-image: url(../i/des/icons.png);
 				background-position: -84px -88px;
 				position: relative;
-				top: 7px;
+				top: 0;
 			}
 
 
@@ -1487,6 +1486,7 @@ footer {
 					position: relative;
 				}
 					.main-contact .left-contact .more-detais-address .same-tyle {
+						line-height: 22px;
 						display: block;
 						padding-left: 136px;
 						margin-bottom: 22px;
@@ -1732,7 +1732,7 @@ footer {
 			}
 				.slider-real .child-slider .main-content-img .more-info .info-plus {
 					float: left;
-					margin-top: 21px;
+					margin-top: 23px;
 					padding-left: 30px;
 					position: relative
 				}
@@ -1748,7 +1748,7 @@ footer {
 						margin-bottom: 0;
 					}
 						.slider-real .child-slider .main-content-img .more-info .info-plus ul li .white-text {
-							font-size: 20px;
+							font-size: 16px;
 							color: #fff;
 						}
 						.slider-real .child-slider .main-content-img .more-info .info-plus ul li .white-text.only {
@@ -1760,7 +1760,7 @@ footer {
 						}
 				.slider-real .child-slider .main-content-img .more-info .call-me {
 					position: absolute;
-					top: 15px;
+					top: 14px;
 					right: 30px;
 				}
 					.slider-real .child-slider .main-content-img .more-info .call-me .title {
@@ -1769,7 +1769,7 @@ footer {
 						margin-bottom: 0;
 						padding-top: 9px;
 						padding-left: 42px;
-						font-size: 20px;
+						font-size: 16px;
 						font-weight: 400;
 						color: #fff;
 						text-align: center;
@@ -1781,7 +1781,7 @@ footer {
 					}
 					.slider-real .child-slider .main-content-img .more-info .call-me .title:before {
 						content: '';
-						display: block;
+						display: none;
 						width: 30px;
 						height: 29px;
 						background-image: url(../i/des/icons.png);

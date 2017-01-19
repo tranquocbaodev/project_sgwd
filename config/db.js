@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 
 var config = {
-    "db": "mydb",
+    "db": "saigonDb",
     "host": "127.0.0.1",
     "user": "",
     "pw": "",
