@@ -22,13 +22,13 @@ var db = require('./config/db');
 
 var app = express(); 
 // uncomment after placing your favicon in /public
-app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
+// app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 3002;
 
 app.listen(port, function () {
   console.log('server listening on port %d in %s mode', port, app.get('env'));
